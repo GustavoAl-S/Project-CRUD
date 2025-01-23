@@ -1,4 +1,7 @@
-# Project-CRUD :construction:
+# Project-CRUD
+<h4 align="center"> 
+   :construction:  Projeto em construção  :construction:
+</h4>
 
 Este é um simples projeto de um sistema CRUD (Create, Read, Update, Delete) para gerenciar usuários em que utilizei a linguagem Java. O projeto permite que você adicione, liste, atualize e exclua usuários de um sistema.
 Este é uma base do projeto que está sendo aprimorada, estarei melhorando a interação e adicinando mais funcionalidades futuramente.
@@ -20,7 +23,7 @@ Este é uma base do projeto que está sendo aprimorada, estarei melhorando a int
 4. Você pode modificar as informações de um usuário e excluir um usuario indicando o seu respectivo ID.
 5. É impresso a lista de usuários com as modificações feitas.
 
-## Funcionalidades
+## :hammer: Funcionalidades:
 
 - **Cadastrar Usuário:** Adiciona um novo usuário com nome, email e um ID único.
 - **Listar Usuários:** Exibe todos os usuários cadastrados no sistema.
