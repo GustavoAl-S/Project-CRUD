@@ -1,12 +1,12 @@
-# Project-CRUD
+# ☕ Project-CRUD
 <h4 align="center"> 
-   :construction:  Projeto em construção  :construction:
+   :rocket: Projeto CRUD em Java
 </h4>
 
-Este é um simples projeto de um sistema CRUD (Create, Read, Update, Delete) para gerenciar usuários em que utilizei a linguagem Java. O projeto permite que você adicione, liste, atualize e exclua usuários de um sistema.
-Este é uma base do projeto que está sendo aprimorada, estarei melhorando a interação e adicinando mais funcionalidades futuramente.
+Este é um simples projeto de um sistema CRUD (Create, Read, Update, Delete), desenvolvido em Java, para gerenciar usuários. O sistema permite adicionar, listar, atualizar e excluir usuários, com interação no terminal/console através de um menu simples.
+Este é uma base do projeto que está sendo aprimorada, onde é permitido futuras atualizaçoes e expansao para novos recursos.
 
-## Como rodar o projeto:
+## 💻 Como rodar o projeto:
 
 1. Clone o repositório
   ``` bash
@@ -14,22 +14,23 @@ Este é uma base do projeto que está sendo aprimorada, estarei melhorando a int
   ```
 2. Abra o projeto na sua IDE de preferência (IntelliJ IDEA, Eclipse, VS Code, etc.).
 
-3. Execute a classe main.java para interagir com o sistema pelo terminal/console.
+3. Execute a classe app.java para interagir com o sistema pelo terminal/console.
 
-## Fluxo do programa:
-1. Inicialmente o sistema pede para que você digite o Nome e o Email de 2 Usuários.
-2. Os usuários são adicionados ao sistema.
-3. Você pode visualizar os usuários.
-4. Você pode modificar as informações de um usuário e excluir um usuario indicando o seu respectivo ID.
-5. É impresso a lista de usuários com as modificações feitas.
+## 🛠️ Fluxo do programa:
+1. O sistema oferece um menu interativo no terminal, onde você pode escolher entre as opções: adicionar, listar, atualizar, excluir ou sair.
+2. Quando você escolhe adicionar um usuário, o sistema pede o nome e o email.
+3. Ao listar os usuários, você verá todos os cadastrados até o momento.
+4. É possível atualizar o nome e o email de um usuário, fornecendo o ID do usuário a ser modificado.
+5. Também é possível excluir um usuário fornecendo o ID correspondente.
+6. O programa continuará rodando até que a opção de sair seja selecionada.
 
 ## :hammer: Funcionalidades:
 
-- **Cadastrar Usuário:** Adiciona um novo usuário com nome, email e um ID único.
-- **Listar Usuários:** Exibe todos os usuários cadastrados no sistema.
+- **Adicionar/Cadastrar Usuário:** Permite adicionar um novo usuário, fornecendo nome e email. O ID é atribuído automaticamente.
+- **Listar Usuários:** Permite exibir todos os usuários cadastrados no sistema.
 - **Atualizar Usuário:** Permite alterar o nome e email de um usuário, informando seu ID.
-- **Excluir Usuário:** Exclui um usuário do sistema com base no seu ID.
+- **Excluir Usuário:** Permite excluir um usuário do sistema com base no seu ID.
+- **Menu de Navegação:** O sistema apresenta um menu com as opções disponíveis para interação e controle de usuários.
 
 ## Observações:
-:construction: O projeto ainda está em construção, então há poucas funcionalidades e não há verificação de entradas, para validar o Email por exemplo, ou exibir mensagens de erros.
-
+:construction: O projeto ainda está na sua versão inicial, o sistema ja conta com as funcionalidades básicas de um sistema CRUD. No entanto, a validação de entradas, para validar o Email por exemplo, e a exibição de mensagens de erros podem ser aprimoradas.
