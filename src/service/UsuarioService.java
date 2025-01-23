@@ -16,7 +16,7 @@ public class UsuarioService{
 
     public void adicionarUsuarios(Usuario usuario){
         usuarios.add(usuario);
-        System.out.println("Usuario adicionado com sucesso.");
+        System.out.println("Usuario adicionado com sucesso. \n");
     }
 
     public List<Usuario> listarUsuarios(){
@@ -24,13 +24,18 @@ public class UsuarioService{
     }
 
     public void imprimirUsuarios(){
-        //Listando os dados cadastrados
-        System.out.println();
-        System.out.println("Usuarios cadastrados: ");
-        for (Usuario users : listarUsuarios()) {
-            System.out.println("ID = " + users.getId());
-            System.out.println("Nome = " + users.getNome());
-            System.out.println("Email = " + users.getEmail() + "\n");
+
+        if (listarUsuarios().isEmpty()) {
+
+            System.out.println("\nNenhum usuário está cadastrado. \n");
+        } else {
+        
+            System.out.println("\nUsuarios cadastrados: ");
+            for (Usuario users : listarUsuarios()) {
+                System.out.println("ID = " + users.getId());
+                System.out.println("Nome = " + users.getNome());
+                System.out.println("Email = " + users.getEmail() + "\n");
+            }
         }
     }
 
@@ -46,19 +51,20 @@ public class UsuarioService{
                 System.out.println("Digite o novo email: ");
                 String novoEmail = sc.nextLine();
                 usuarios.get(i).setEmail(novoEmail);
+                System.out.println();
 
-                System.out.println("Operação realizada com sucesso.");
+                System.out.println("Atualização realizada com sucesso.");
             }
         }
     }
 
-    public void excluirUsuario(int idExcluir){
+    public void excluirUsuario(int id){
 
         //.size indica o tamanho do ArrayList
         for (int i = 0; i < usuarios.size(); i++) {
             // estou acessando a lista, e retornando o objeto armazenado na posiçao i
             // e tambem acessando o atributo com getId() e depois comparando com o parametro id para excluir
-            if (usuarios.get(i).getId() == idExcluir) {
+            if (usuarios.get(i).getId() == id) {
                 usuarios.remove(i);
                 System.out.println("Usuario excluido com sucesso.");
                 break;
